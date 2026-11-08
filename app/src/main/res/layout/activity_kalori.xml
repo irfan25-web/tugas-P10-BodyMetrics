@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 Kalori &amp; Protein"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Tinggi badan (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Berat badan (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Umur (tahun)"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Pria" />
+
+            <RadioButton
+                android:id="@+id/rbWanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Wanita" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spAktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hitung" />
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
